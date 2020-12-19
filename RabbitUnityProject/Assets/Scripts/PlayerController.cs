@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetTrigger("jump_trigger");
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
-            playerAudio.PlayOneShot(jumpSound, 0.5f);
+            playerAudio.PlayOneShot(jumpSound, 0.05f);
         }
         else playerAnim.SetBool("jump_boolean", false);
     }
