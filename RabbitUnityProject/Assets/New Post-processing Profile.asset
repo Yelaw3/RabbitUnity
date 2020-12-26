@@ -21,10 +21,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.9
+    value: 1
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.13976933, g: 0.21698111, b: 0.09698107, a: 1}
   ambientOnly:
     overrideState: 1
     value: 1
@@ -70,13 +70,13 @@ MonoBehaviour:
     value: 5
   aperture:
     overrideState: 1
-    value: 5
+    value: 9
   focalLength:
     overrideState: 1
     value: 50
   kernelSize:
     overrideState: 1
-    value: 1
+    value: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
