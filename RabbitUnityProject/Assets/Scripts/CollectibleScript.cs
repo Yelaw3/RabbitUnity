@@ -5,7 +5,9 @@ using UnityEngine;
 public class CollectibleScript : MonoBehaviour
 {
     public float rotateSpeed = 30f;
+    public GameObject ScoreText;
     public GameObject collectEffect;
+    public int points = 0;
 
     private void Update()
     {
@@ -17,8 +19,15 @@ public class CollectibleScript : MonoBehaviour
         {
             other.GetComponent<ScoreText>().points++;
             Instantiate(collectEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
-
+            gameObject.SetActive(false);
         }
+
     }
+
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(80, 50, 200, 100), points + "/3");
+    }
+
 }
+

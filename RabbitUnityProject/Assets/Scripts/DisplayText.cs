@@ -16,6 +16,6 @@ public class DisplayText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, time);
+        Destroy(CollectCarrotsText, time);
     }
 }

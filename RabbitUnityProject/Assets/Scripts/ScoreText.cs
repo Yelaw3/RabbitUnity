@@ -9,6 +9,6 @@ public class ScoreText : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(80, 50, 200, 100), "Score : " + points);
+        GUI.Label(new Rect(80, 50, 200, 100), points + "/3");
     }
 }
