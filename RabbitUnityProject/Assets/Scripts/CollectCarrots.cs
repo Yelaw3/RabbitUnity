@@ -12,10 +12,11 @@ public class CollectCarrots : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider plyr)
+    void OnTriggerEnter(Collider other)
     {
-        if (plyr.gameObject.tag == "Player")
-        objects--;
-        gameObject.SetActive(false);
+        if (other.gameObject.tag == "Player")
+        {
+            objects--;
+        }
     }
 }

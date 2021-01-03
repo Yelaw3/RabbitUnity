@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnim;
     private AudioSource playerAudio;
     public bool isOnGround = true;
-    public GameObject dirtEffect;
 
     // Start is called before the first frame update
     void Start()
