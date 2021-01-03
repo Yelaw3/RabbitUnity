@@ -8,13 +8,11 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public static bool isPaused;
 
-    // Start is called before the first frame update
     void Start()
     {
         pauseMenu.SetActive(false); //Rendre inactif le menu de pause au lancement du jeu
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) //Quand on presse Échap, le jeu est mis en pause, et si le jeu est déjà en pause, on reprend la partie.
