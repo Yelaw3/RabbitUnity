@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayGame() //Charger la scène précédente dans l'index des scènes pour lancer le jeu
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class DisplayText : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public float time = 5f;
     public GameObject CollectCarrotsText;
 
     void Start()
     {
-        CollectCarrotsText.SetActive(true);
+        CollectCarrotsText.SetActive(true); //Faire apparaitre le texte "CollectCarrotsText" au début de la partie
     }
 
     // Update is called once per frame
     void Update()
     {
-        Destroy(CollectCarrotsText, time);
+        Destroy(CollectCarrotsText, time); //Faire disparaître le text après 5 secondes
     }
 }

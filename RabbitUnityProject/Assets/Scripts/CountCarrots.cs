@@ -7,16 +7,14 @@ using UnityEngine.UI;
 public class CountCarrots : MonoBehaviour
 {
     public GameObject objUI;
-    // Use this for initialization
-    void Start()
+
+    void Start() //Trouver le Game Object "Score"
     {
         objUI = GameObject.Find("Score");
     }
-    // Update is called once per frame
-    void Update()
-    {
-        objUI.GetComponent<Text>().text = CollectCarrots.objects.ToString();
 
+    void Update() //Si dans le script CollectCarrots le nombre d'objets actifs = 0, alors on affiche un texte et on quitte le jeu
+    {
         if (CollectCarrots.objects == 0)
         {
             objUI.GetComponent<Text>().text = "All carrots are collected, well done !";

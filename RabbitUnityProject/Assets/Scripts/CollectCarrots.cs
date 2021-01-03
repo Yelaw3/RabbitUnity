@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CollectCarrots : MonoBehaviour
 {
-    public static int objects = 0;
-    // Use this for initialization
-    void Awake()
+    public static int objects = 0; //créer un objet
+    void Awake() //Pour chaque objet qui possède ce script, on ajoute un objet à la variable int "objects"
     {
         objects++;
     }
 
-    // Update is called once per frame
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) //Quand l'objet entre en collision avec le joueur, on enlève un objet de la variable int "objects"
     {
         if (other.gameObject.tag == "Player")
         {

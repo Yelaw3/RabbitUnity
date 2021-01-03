@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour
 {
-    public int points = 0;
+    public int points = 0; 
 
-    void OnGUI()
+    void OnGUI() //Faire apparaître un texte de score
     {
         GUI.Label(new Rect(80, 50, 200, 100), points + "/3");
     }
